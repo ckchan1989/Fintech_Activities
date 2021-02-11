@@ -1,6 +1,6 @@
 #Header for this file
 ---
-![test_image.jpg](/images)
+![click_here](/images/test_image.jpg)
 ---
 ##The second less noticeable header is here
 ---
