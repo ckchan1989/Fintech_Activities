@@ -1,6 +1,6 @@
 #Header for this file
 ---
-![click_here](C:\Users\Chris Chan\Documents\MONASH_BOOTCAMP\Fintech_Activities\11Feb21_Activities\images\test_image.jpg)
+![click_here](https://github.com/ckchan1989/Fintech_Activities/blob/main/test_image.jpg?raw=true)
 ---
 ##The second less noticeable header is here
 ---
