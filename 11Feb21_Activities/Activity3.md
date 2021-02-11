@@ -6,10 +6,10 @@
 ---
 ###Another less noticeable one now..
 ---
-[Code_Link](C:\Users\Chris Chan\Documents\MONASH_BOOTCAMP\Fintech_Activities\11Feb21_Activities\code)
+[Code_Link](/11Feb21_Activities/code)
 ---
-[Data_Link](C:\Users\Chris Chan\Documents\MONASH_BOOTCAMP\Fintech_Activities\11Feb21_Activities\data)
+[Data_Link](/11Feb21_Activities/data)
 ---
-[Images_Link](C:\Users\Chris Chan\Documents\MONASH_BOOTCAMP\Fintech_Activities\11Feb21_Activities\images)
+[Images_Link](/11Feb21_Activities/images)
 ---
-[References_Link](C:\Users\Chris Chan\Documents\MONASH_BOOTCAMP\Fintech_Activities\11Feb21_Activities\references)
+[References_Link](/11Feb21_Activities/references)
