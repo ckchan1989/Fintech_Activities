@@ -1,6 +1,6 @@
 #Header for this file
 ---
-![click_here](\11Feb21_Activities\images\test_image.jpg)
+![click_here](\images\test_image.jpg)
 ---
 ##The second less noticeable header is here
 ---
