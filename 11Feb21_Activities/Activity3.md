@@ -1,10 +1,10 @@
-#Header for this file
+# Header for this file
 ---
 ![image](/11Feb21_Activities/images/test_image.jpg)
 ---
-##The second less noticeable header is here
+## The second less noticeable header is here
 ---
-###Another less noticeable one now..
+### Another less noticeable one now..
 ---
 [Code_Link](/11Feb21_Activities/code)
 ---
