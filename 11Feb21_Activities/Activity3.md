@@ -1,6 +1,6 @@
 #Header for this file
 ---
-![image](https://github.com/ckchan1989/Fintech_Activities/tree/main/11Feb21_Activities/images/test_image.jpg?raw=true)
+![image](https://github.com/ckchan1989/Fintech_Activities/tree/main/11Feb21_Activities/images/test_image.jpg)
 ---
 ##The second less noticeable header is here
 ---
