@@ -34,7 +34,7 @@ Recently, 12Feb21, Coinsquare announched that Mogomoney has increased their stak
 
 * *What specific financial problem is the company or project trying to solve?*
 
-The financial problem Coinsquare is trying to solve is to make cryptocurrency easily accessible, secure and easy to use.
+The financial problem Coinsquare is trying to solve is to make cryptocurrency easily accessible, secure and easy to use. They created the Coinsquare platform/ exchange to solve this problem.
 
 * *Who is the company's intended customer?  Is there any information about the market size of this set of customers?*
 
@@ -79,19 +79,36 @@ This domain has also seen the evolution of smart contracts to utilise the securi
 
 * *What has been the business impact of this company so far?*
 
+As Coinsquare is not a listed business, their financials are not easily accessible. With this being said, we know that their revenue is growing with estimated annual revenue of $14m and trading volume of $525m in January 2021. With the recent Mogo additional investment in Coinsquare, the valuation of the pre-money valuation of Coinsquare ranges from $250-350m.
+
 * *What are some of the core metrics that companies in this domain use to measure success? How is your company performing, based on these metrics?*
+
+One key measure of success of a cryptocurrency platform is the trading volume and whilst Coinsquare is growing, it still lags key players such as Binance ($27bn in 24 hours), Coinbase Pro ($5bn in 24 hours) and Kraken ($2b in 24 hours).
 
 * *How is your company performing relative to competitors in the same domain?*
 
+The company isn't performing well mid last year, Coinsquare was accused of operating a wash-trading scheme which violated secruities law. Wash Trading is when they internally execute large zero-fee market trades within their orders to give the apperance of large trading activity. It is reported taht 90% of Coinsquare's volume was artifically created. The impact of this was that key Coinsquare execs including the founder Rostand himself was forced to resign and pay penalties ($1m was paid by Diamond). Further, they were banned from being directors of a companies of "market participants" for one to three years.
+
+The reputation impact caused from this has stunted Coinsquares growth and trading volume has seen a decline.
+
+
 ## Recommendations
 
-* *If you were to advise the company, what products or services would you suggest they offer? (This could be something that a competitor offers, or use your imagination!)*
+* *If you were to advise the company, what products or services would you suggest they offer?*
+
+Ignoring the reputational risk and trust that users may not have for Coinsquare, I would suggest the business continue to focus on building the customer experience and strengthening this pillar of difference for them. 
 
 * *Why do you think that offering this product or service would benefit the company?*
 
+When reviewing the various cryptocurrency platforms, the underlying technology of the exchange is similar. One key consideration for users when deciding which platform to utilise is how easy is it to pick up and use. By furthering strengthening this, Coinsquare can excel to be the leading market player in an easy to use cryptocurrency platform.
+
 * *What technologies would this additional product or service utilize?*
 
+One potential technology is utilising AI to speed up the registration and verification process. In addition, using AI, to start providing advise on what and when to trade on their platform.
+
 * *Why are these technologies appropriate for your solution?*
+
+The AI technology mentioned is appropriate for the solution as the data is there for them to use and some of the mentioned is alredy being implemented in other platforms.
 
 
 ## Sources of Information
@@ -111,4 +128,10 @@ https://101blockchains.com/history-of-blockchain-timeline/#prettyPhoto/2/
 https://www.hedgewithcrypto.com/cryptocurrency-trading/
 https://www.theblockcrypto.com/linked/85774/canada-coinsquare-crypto-leadership
 https://medium.com/@SeoJaeDuk/coinsquare-raises-10-5-million-series-a-7452c5da0453
+https://www.crunchbase.com/organization/coinsquare/company_financials
+https://www.coindesk.com/coinsquare-exchange-execs-to-resign-over-wash-trading-scandal
+https://www.osc.gov.on.ca/documents/en/Proceedings-SET/set_20200716_coinsquare.pdf
+https://ihodl.com/topnews/2020-06-14/coinsquare-ceo-accused-fake-trades/
+https://cointelegraph.com/news/coinsquare-ceo-accused-of-orchestrating-wash-trades
+
 
