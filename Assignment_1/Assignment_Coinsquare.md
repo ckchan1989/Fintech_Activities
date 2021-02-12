@@ -1,4 +1,4 @@
-# TITLE / The Canadian Mathemecian Crypto Platform Solution - Coinsquare
+# The Rostand Mathematician Crypto Solution - Coinsquare
 
 ## Overview and Origin
 
