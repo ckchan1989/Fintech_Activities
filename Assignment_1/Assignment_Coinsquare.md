@@ -18,9 +18,9 @@ The founder of Coinsquare is Virgile Rostand. Cole Diamond became a co-founder a
 
 * *How did the idea for the company (or project) come about?*
 
-Virgile Rostand (Rostand) was a mathemetician with a Master of Sciene in Applied Mathematics from Universite Laval and Master in Mathematical Finance from the University fo Toronto. He completed his mentioned studies in 2004.
+Virgile Rostand (Rostand) was a mathematician with a Master of Science in Applied Mathematics from Universite Laval and Master in Mathematical Finance from the University fo Toronto. He completed his mentioned studies in 2004.
 
-As he progressed through his varied career which included stints in academics, financial engineer, consultantancy and quantitative development, Rostand started to observe and become aware of the growing trend of cryptocurrency. In 2014, his curiosuity and enthuisasm led him to create and Coinsquare and he officially started building the platform we know today.
+As he progressed through his varied career which included time in academics, financial engineer, consultantancy and quantitative development, Rostand started to observe and become aware of the growing trend of cryptocurrency. In 2014, his curiosuity and enthuisasm led him to create Coinsquare and he officially started building the platform we know today.
 
 
 * *How is the company funded? How much funding have they received?*
@@ -46,20 +46,20 @@ Whilst Coinsquare's competitors offer similar products, where Coinsquare excels 
 
 * *Which technologies are they currently using, and how are they implementing them?*
 
-First and foremost, Coinsquare lives and breaths in the cryptocurrency and blockchain space so this is the predominat technology it utilises. It would have a cloud based infrastucture to build it's user layer and store information. They utilise cold storage methoed to contrl and store the coins of it's users. They use two factor authentication and SSL communications to provide further security to their users.
+First and foremost, Coinsquare lives and breaths in the cryptocurrency and blockchain space so this is the predominat technology it utilises. It would have a cloud based infrastucture to build it's user layer and store information. They utilise cold storage method to control and store the coins of it's users. They use two factor authentication and SSL communications to provide further security to their users.
 
 
 ## Landscape:
 
 * *What domain of the financial industry is the company in?*
 
-Blockchain and Cryptocurrency - specifically cryptocurrency.
+Blockchain and Cryptocurrency.
 
 * *What have been the major trends and innovations of this domain over the last 5-10 years?*
 
-The cryptocurrency has been rapidly evolving over the past 10 yaers. Since the first bitcoin purchase in 2010, it has evolved from something that only few people know about to know a commonly traded e-currency by both day traders and sophisticated investors. Whilst Bitcoin was the original cryptocurrency that started this technology, various other cryptocurrencies have also been created such as Ethereum, Litecoin, Tron and plenty more (even humourously named ones such as Dogecoin).
+The cryptocurrency has been rapidly evolving over the past 10 years. Since the first bitcoin purchase in 2010, it has evolved from something that only few people know about to now a commonly traded e-currency by both day traders and sophisticated investors. Whilst Bitcoin was the original cryptocurrency that started this technology, various other cryptocurrencies have also been created such as Ethereum, Litecoin, Tron and plenty more (even humourously named ones such as Dogecoin).
 
-This domain has also seen the evolution of smart contracts to utilise the security of blockchain to deliver contracts. The most relevant trend for the purposes of looking at Coinsquare is the wave of platforms that has been created over the past 10 years such as Coinsquare to give users the power to transact in the cryptocurrency world.
+This domain has also seen the evolution of smart contracts to utilise the security of blockchain to deliver contracts. The most relevant trend for the purposes of reviewing at Coinsquare is the wave of platforms that has been created over the past 10 years such as Coinsquare to give users the power to transact in the cryptocurrency world.
 
 * *What are the other major companies in this domain?*
 
@@ -87,10 +87,7 @@ One key measure of success of a cryptocurrency platform is the trading volume an
 
 * *How is your company performing relative to competitors in the same domain?*
 
-The company isn't performing well mid last year, Coinsquare was accused of operating a wash-trading scheme which violated secruities law. Wash Trading is when they internally execute large zero-fee market trades within their orders to give the apperance of large trading activity. It is reported taht 90% of Coinsquare's volume was artifically created. The impact of this was that key Coinsquare execs including the founder Rostand himself was forced to resign and pay penalties ($1m was paid by Diamond). Further, they were banned from being directors of a companies of "market participants" for one to three years.
-
-The reputation impact caused from this has stunted Coinsquares growth and trading volume has seen a decline.
-
+The company isn't performing well since mid last year, Coinsquare was accused of operating a wash-trading scheme which violated secruities law. Wash Trading is when they internally execute large zero-fee market trades within their orders to give the apperance of large trading activity. It is reported that 90% of Coinsquare's volume was artifically created. The impact of this was that key Coinsquare execs including the founder Rostand himself was forced to resign and pay penalties ($1m was paid by Diamond). Further, they were banned from being directors of a companies of "market participants" for one to three years.
 
 ## Recommendations
 
@@ -108,7 +105,7 @@ One potential technology is utilising AI to speed up the registration and verifi
 
 * *Why are these technologies appropriate for your solution?*
 
-The AI technology mentioned is appropriate for the solution as the data is there for them to use and some of the mentioned is alredy being implemented in other platforms.
+The AI technology mentioned is appropriate for the solution as the data is there for them to use and some of the mentioned is already being implemented in other platforms.
 
 
 ## Sources of Information
