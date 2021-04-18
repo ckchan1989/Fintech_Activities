@@ -1,0 +1,129 @@
+
+First machine learning is linear regression model
+
+develop statistical models based on new data automatically
+
+Pipelines- Build Model -> Fit Data into Model -> Predict with model
+
+Packages - scikit scipy
+
+intelligent algorithms - changes behaviours as it runs
+
+Components of machine learning
+1. Artificial intelligence - similuation of human inteligeence in machines. Machines micmiking humans behaviour and cognitive activity.
+2. Predictive analytics - predict future outcomes based on historical data
+3. Machine learning - generalise behaviour/ outcome based on data/ past experience
+
+Machine learning
+
+Supervised Learning vs Unsupervised learninig
+Supervised - programming feeding data in (regression [predictive and forecasting] and classification [classifying outcomes])
+Unsupervised - algorithm learns by it self (dimensionality reduction [finding the relevant dimensions] and clsutering [reommending systems like google search/ netflix])
+
+Time Series Basics:
+Using date time index Pandas DateTimeIndex is going to be very helpful
+Resample function - picking a subset of the data once a datetimeindex has been created
+
+df.info() - gives you the dataframe schema
+df.describe() - give you general statistics about data frame
+
+Index - needs to be date time (remember parse_date = True,index_col="datetime")
+
+df.column_name.plot() or df['column_name'].plot()
+
+df2.loc['1980'] gives you data in dataframe from 1980 (this only works if index is datetimeindex)
+
+df2.loc['1980-01] gives you data in dataframe in January 1980
+
+df.loc['1985':'1986'] gives you 1985 to 1986
+
+df2.resample('A').mean() - 'A' = annual, 'M' = monthly, 'D' = Daily and 'W' = Weekly. resample gives you power to get data based on the datetimeindex.
+
+df2.index = show all indexs 
+df2.index.year = show indexes in year
+df2.index.month = show indexes in month
+df2.index.isocalendar().week = week of year
+
+Your time series data has useful and not useful component. Useful data has "signals" which can you observe patterns
+
+Components of time series decomposition:
+Level - what is the average value of the series? i.e. common averages
+Trend - is there any overall direction of movement?
+Periodicity - do patterns occur in cycles? Similar to seasonality
+Residual - how much noise exists in the data?
+
+from statsmodels.tsa.seasonal import seasonal_decompose - statsmodel package gives you a lot of data exploration and estimation tools
+tsa.seasonal - seasonal information
+
+gives you trends, seasonalities and noise
+seasonal_decompose(df['column'], model = 'multiplicative')
+multiplicative
+or
+addictive
+
+multiplicative - variance of the tiem series is high, multiplying components together
+addictive - variance of the time series is very low, adding components togetehr
+
+what to use which one, rule of thumb:
+addition is appropriate if it's trend is quite stagnant i.e. has seasonal trend
+multiplicative - if it's not a clear seasonal variable 
+
+Exponentially Weighted Moving Average (EMWA)
+approach used to denoise a dat set
+Step 1 - calcualte average of the last n prices
+2 - Weights are added to the averages based on recency of the data
+3 - requires past average values to be stored in memory
+
+basically a moving average with weighting (usually to recency of data)
+
+Hodrick-Prescott Filter
+filters out short term fluctuations
+Decomponse a time series into trend and non trend components
+
+df.column_name.ewm(halflife=10).mean().plot()
+ewm is exponentially wegiht moving average function
+halflife=10 - every past 10 days, you'll have your weighting halved going backwards or doubled going forward
+If you keep your halflife shorted -the more weightign you give in recent data
+
+hodrick-prescott filter (remember it reduces the noise)
+import statsmodel.api as sm
+ts_noise, ts_trend = sm.tsa.filters.hpfilter(df['column'])
+
+ts_noise and ts_trend saves the output from this function
+ts_noise - gives you the noise
+ts_trend - gives you the trend
+
+Autocorrelation
+How closely current values correlate with past values
+i.e. determine to what extent today's prices correlate with yesterday's prices
+
+df['new_column_name'] = df.column.shift() creates column that offsets column by 1 record (you can put a number in shift() i.e, shift(-1)
+df.column.diff() - difference between current row vs previous row
+
+df.column.autocorr(lag=1) how does my column lag vs previous record
+if it's 1 then it's highly correlated
+
+import statsmodels as sm
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+
+plot_acf measures autocorrelation at different lags
+plot_pacf partial autocorrelation - partial reduces components by disregarding???
+
+plot_acf(df['column'], lags=48); 
+
+sm.graphics.tsaplots.plot_pacf(df.column, lags=26, zero=False)
+or plot_pacf(df['column'],lags=30, zero=Fales)
+
+zero = Fales - don't show 0 auto crrelation applies to both pacf and acf
+helps you zoom in on high specific lags
+
+
+not sure what autocorrelation means
+
+
+Questions
+halflife in hodrick-prescott
+multiplicative vs addictive in seasonal
+autocorrelation - acf and pacf?
+
+
