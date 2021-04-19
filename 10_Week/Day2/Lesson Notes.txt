@@ -1,0 +1,71 @@
+stationary data vs non stationary data
+Non stationary has upward or downard trend
+
+ARMA
+auto regressive model (AR) 
+past values used to predict future values
+some degree of autocreelation
+AR model may have one signficant lag or it may have multiple
+
+ftom statsmodels.tsa.stattools import adfuller - augmented dickey fuller test will determine if data is stationary or not
+
+adfuller(df.column)
+
+the output - second value is p value. It's mckinnen approximate value
+if this number is less than 0.05 then it's stationary. This is widely used
+
+to make data stationary:
+
+Technique 1 - apply a percent change
+df.column.pct_change()
+df.dropna()
+
+Technique 2 - applying a difference between data points
+df.column.diff()
+df.dropna()
+
+ARIMA combines AR and MA models
+past values and errors are used to predict future values
+
+import
+from statsmodels.tsa.arima_model import ARMA
+
+create arma model
+model = ARMA(df.values, order=(1,1))
+1st 1 indicates number of AR lags
+second 1 indicates the number of MA lags
+
+fit the model
+results = model.fit()
+
+Summarises the model
+results.summary()
+
+AIC and BIC is going to be heavily used - the lower the value the better
+
+AIC Akaike Information Criterion
+BIC Bayesian Information Criterion
+
+ARIMA(df.column, order(2,1,2))
+First 2 and last 2 - first 2 is for AR and last 2 is MA
+1 in the middle = do yo uwant to explain the first value itself. IF you put 1, it'll start explaining the difference after the 1st value
+
+Garch Model - generalised autoregressive conditional hetreo...
+
+from arch import arch_model
+model = arch_model(df, mean='Zero', vol='GARCH', p=1, q=1)
+p - AR component of the model, q = MA component of the model
+
+res = model.fit(disp='on') - tells you iterations performed
+res.summary()
+
+fig = res.plot(annualize='D')
+D - reflects scaling of 252 business days
+
+
+forecast_horizon = 3 #3 days
+forecasts = res.forecast(start='2009-12-31', horizon=forecast_horizon)
+
+Auto regressive (AR) future values based on past values
+MA - future values based on past errors
+
