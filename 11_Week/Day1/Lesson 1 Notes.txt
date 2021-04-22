@@ -1,0 +1,36 @@
+
+Today:
+
+Logistic Regression and Support Vector Machines
+
+Classification - categorizing somethign according to shared qualities or characteristics
+
+logist regression
+
+1 preprocess
+2 train
+3 validate
+4 predict
+
+sklearn.datasets package can generate dummy data
+
+from sklearn.dataset import make_blobs
+
+X, y = make_blobs(centers=2, random_state=42)
+
+from sklearn.model_selection import train_test_split - splits data into train and test
+stratify = y is how many categories you want
+random_state default is none. Define a number 
+
+classifier.score = closer to 1 is better
+
+Confusion Matrix
+
+True/ False Positive/ Negative
+True or False is model prediction accuracy
+Positive/ Negative if the person is positive or negative for a medical test (i.e. diabetes)
+
+False negatives are bad - the person doesn't know they are in a meidcal condition!
+
+Accruacy - correct predicted (true positive and true negative) over entire dataset
+Precision - True Positive (true positive / (true positive + false positive)
