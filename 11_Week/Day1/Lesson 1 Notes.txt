@@ -34,3 +34,4 @@ False negatives are bad - the person doesn't know they are in a meidcal conditio
 
 Accruacy - correct predicted (true positive and true negative) over entire dataset
 Precision - True Positive (true positive / (true positive + false positive)
+Recall - true positive / (true positive + false negative)
