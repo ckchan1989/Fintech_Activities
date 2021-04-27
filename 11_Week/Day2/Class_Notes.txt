@@ -1,0 +1,92 @@
+Categorical data
+
+is basically in the column it's 1 or 0.
+
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+
+LabelEncorder - use to normalise the labels. Transfer non-numerical labels to numerical labels
+StandardScaler - ??
+
+Integer Encoding
+label_encoder = LabelEncoder() 
+creates an instance of label encoder
+
+Fit the label encoder
+label_encoder.fit(df['column'])
+
+
+list(label_encoder.classes_) - shows what's in the fitted column
+
+Encode the column to integer
+
+df['new_column_name'] = label_encoder.transform(df['column'])
+
+
+however, if you want to apply numbers based on what you want-
+
+first you create a dictionary
+
+dict_list = {
+'chris' : 1,
+'Megan' : 2,
+}
+
+df['new_column'] = df['column'].apply(lambda x: months_num[x])
+
+
+Dummy Encoding
+
+df2 = pd.get_dummies(df, columns=['column']) 
+
+can do multiple columns at once
+
+
+To scale the data
+
+data_scaler = StandardScaler()
+
+data_scaler.fit(df)
+
+df2 = data_Scaler.transform(df)
+
+
+ALL OF THE ABOVE IS TO CONVERT TO NUMBERS SO MACHINE LEARNING CAN OCCUR
+
+
+Tree-based algorithms are supvised learning methods that are mostely used for classification and regression
+
+Linear models - relatinoship between variables (i.e. house prices based on house size)
+
+Non-Linear models-  tree based alogorithms can map non-ilnear relationships in data
+
+
+sklearn.tree - decision trees
+sklearn.ensemble - implementations for random forest, gradient boosting, bossting and bagging algorithms
+
+Decision tree - binary decision tree
+
+"Root Node" is always the top
+Decision Node is where decisions are made
+Terminal Node end result - no more decisions. nodes that do not split
+Pruning - process of removing subnoteds of a decision notde
+tree's depth - number of decisions nodes encournted befrore making a decision
+
+import pydotplus
+from IPython.display import Image
+displays decision tree
+
+
+train_test_split(X, y, random_state=78)
+
+Combining weak learners to ensemble to boost them
+
+weak learnings can be combined with:
+GradientBoostingTree
+XGBoost - most commonly used
+Random Forest
+
+
+RandomForestClassifier(n_estimators=1000, random_state=78)
+n_estimators - number of random trees. The higher the number the more trees but more training time is required.
+
+
