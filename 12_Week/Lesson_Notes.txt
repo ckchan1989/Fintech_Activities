@@ -1,0 +1,80 @@
+NLP
+Natural Language Processing
+
+Methods for buildign computer to understand, generate and manipulate human language
+
+What is NLP used for?
+Spell check
+Siri google assistant
+Spam Filters
+google translations
+
+handling unstructured data from tweets and facebook posts too
+
+NLP to help proces textual data
+
+Law (Finding relevant reserach, laws, regulations information etc)
+MEdical Reserach
+Stock MArket Analysis
+
+NLP in finance - automated sentiment analysis
+
+Basic text classification
+classifying statements as subjective/ objective, positive/ negative
+
+Information Extraction
+finding diagnosis from doctor's notes
+identifying names of indidviduals from a witness satement
+finding selected information in text
+
+Document Summarization
+Generating a headline or abstract for a document
+
+Complex Question Answering
+like a chat bot
+
+
+NLP isn't easy - humans even intepret each other too
+Contextual - there needs to be context
+Ambiguous - words have multiple meanings
+NonStandard - no general set of rules across multiple groups and dialects
+
+
+Workflow
+
+Preprocessing - prepare the text, including ingestion
+Extraction - get interesting features of the text
+Analysis - Summarise these features
+Representaiton - visualize your analysis
+
+Tokenization
+Splits a string into substrings
+A toekn is a group of characters taht have meanings. It can be words, sentences or phraes
+
+
+sent_tokenize - sentence tokenize
+word_tokenze - word tokenize
+
+
+Stopwords - words to remove/ ignore that don't have informational content
+
+set('TEXT')
+gives you the unique alphabets - note that capitals count as it'ws own
+
+
+('TEXT').lower() - takes out the capitalisation
+
+re has a lot of different word functions
+like search
+
+To take out anything that's not a letter
+regex = re.compile('[^a-zA-Z ]')
+re_clean = regex.sub('', sentence)
+print(re_clean)
+
+
+lemttaization - standardizing the morphoglogy of words
+i.e. walking, walked, walks will all become walk
+
+
+

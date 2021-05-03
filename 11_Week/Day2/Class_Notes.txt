@@ -89,4 +89,9 @@ Random Forest
 RandomForestClassifier(n_estimators=1000, random_state=78)
 n_estimators - number of random trees. The higher the number the more trees but more training time is required.
 
+Bagging and Boosting
+baggin - random sampling with replactement - average predictionsf rom multiple samples and/or models
+boosting - random sampling with replacemenet and weighting - sampling more heavily the observations with weak predictions
+
+
 

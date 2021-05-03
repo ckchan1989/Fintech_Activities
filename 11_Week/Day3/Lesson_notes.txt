@@ -1,0 +1,57 @@
+Focus today is Imbalanced Classes
+
+Confusion matrix is to help us visualise and tally errors
+
+Accuracy - (TP + TN) / All 
+
+Precision = TP / (TP+FP) - proportion of positive calls that were correct
+
+Recall TP/(TP+FN)
+
+rare to have high precision and recall - usually one goes up and one goes down
+
+Specificity - how many negative samples were correctly identified
+
+F1-score - balances precision and recall
+
+Dealing with imbalanced classes
+oversampling / undersapling
+use the right performance metrics for evaluation
+change your model
+
+Oversampling
+randomly choose minority class instances (bagging technique)
+SMOTE (synthetic minority oversampling technique): create sysnetic data from niority samples through K-nearest neighbours
+
+
+Random oversampling
+
+from imblearn.over_sampling import RandomOverSampler
+
+ros = RandomOverSampler(random_state=1)
+X_resamples, y_resampled = ros.fit_resample(Xtrain, y_train)
+Counter(y_resampled)
+
+SMOTE
+
+from imblearn.over_sampling import SMOTE
+
+X_resampled, y_resampled = SMOTE(random_state=1, sampling_strategy=1.0).fit_resample( X_train, y_train)
+
+
+SMOTE oversampling creates new data set
+random oversampling just copies random parts of existing data set
+
+Undersampling
+
+taking our instance of majority class
+
+Random undersampling - randomly choose majority class instances to take out of training set
+Cluster centroid - (could take a long time to run)
+
+practical when there is a lot of data points
+
+from imblearn.under_sampling import RandomUnderSampler
+from imblearn.under_sampling import ClusterCentroids
+
+Combinationg sampling using SMOTEENN
