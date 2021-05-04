@@ -1,0 +1,58 @@
+Sentimental ANalysis
+
+study of peopples opinions emotions
+
+What kind of sentiments could be analysed?
+Polarity - Positive, neutral and negative
+Emotions - angry, happy, ssad
+Intentions - what are people going to do
+Certainty on Economy - positive, negatvie and neutral (realtime economic indicators by RBA)
+
+
+How to do it?
+
+Ruled-Based Analysis - sentiment analysis based on rules crafted using NLP techniques such as stemming, tokenization, part of speech tagging and parsing
+
+You define two lists of polarized words - for example: positive and negative works
+Count the number of positive words
+Count the number of negative words
+
+more positive words than positive (vice versa)
+
+Supervised machine learning
+
+Challenges:
+multilingual sentiment anlaysis is complex
+people express openiong in complex ways
+in opnion texts, leixcal content alone can be misleading
+voice tone is not considered
+
+
+Term Relevance
+term relevance is quite important on sentimental anlysis since leads to a better undestaning of human speech
+
+Corpus - large structured and organized collection of text documents that normally verses on a specific matter
+
+TF-IDF
+Term frequency and inverse document frequency
+weighting factor measure ow important a word is to a document in a collection of documents or corpus
+TF a count of the word in a document
+IDF - how rare is my word in the document set - closer it is to 0, the more common it is
+TF drives up the score, but IDF will bring it down if the word occurs in all or many documents
+
+TF can be a measure of relevant
+
+A Bag of Words is basically a text converted into a bag of words - grammar and word order is disregarded
+
+
+Vectorizer - maps the word to a number
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidVectorizer
+
+Vader Sentiment - score the sentiment poloarity of human speech as positive neutral or negative based on a set of rules and a lexicon. Gives a number to say how positive or negaive it is basede on a scale
+1 = positive / -1 is negative
+0 is neutral
+You can get compound score too - summation of all lexicon ratings 
+
+Analysing Tone - use IBM Watson
+IBM Cloud IPI
